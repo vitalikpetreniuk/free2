@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
   $(scrollUp).click(() => {
     $('html, body').animate({
       scrollTop: 0
-    }, 500)
+    }, 0)
   })
 
   if (btnSearch !== null) {
@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
       selectOption = _this.find('option'),
       selectOptionLength = selectOption.length,
       selectedOption = selectOption.filter(':selected'),
-      duration = 450;
+      duration = 0;
 
     _this.hide();
     _this.wrap('<div class="select"></div>');
